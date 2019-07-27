@@ -1,101 +1,163 @@
-D2Admin 是一个开源的管理系统前端集成方案，为了方便开发者快速进行管理系统开发而设计
+![banner](https://raw.githubusercontent.com/FairyEver/d2-admin/master/doc/image/banner.png)
 
-## 仓库和文档
+<p align="center">
+  <a><img src="https://img.shields.io/github/release/d2-projects/d2-admin.svg"/></a>
+  <a><img src="https://img.shields.io/npm/v/@d2-admin/ice-scaffold.svg"/></a>
+  <a><img src="https://img.shields.io/github/last-commit/d2-projects/d2-admin.svg"/></a>
+  <a><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"/></a>
+</p>
 
-本项目仓库在 Github 和 Gitee 同步发布
+<p align="center">
+	<a><img src="https://img.shields.io/github/issues/d2-projects/d2-admin.svg"/></a>
+	<a><img src="https://img.shields.io/github/issues-closed/d2-projects/d2-admin.svg"/></a>
+	<a><img src="https://img.shields.io/github/issues-pr/d2-projects/d2-admin.svg"/></a>
+	<a><img src="https://img.shields.io/github/issues-pr-closed/d2-projects/d2-admin.svg"/></a>
+	<a><img src="https://img.shields.io/github/forks/d2-projects/d2-admin.svg"/></a>
+	<a><img src="https://img.shields.io/github/stars/d2-projects/d2-admin.svg"/></a>
+</p>
 
-[中文文档](http://d2admin.fairyever.com/zh/)
+<p align="center">
+	<a href="https://www.travis-ci.org/d2-projects/d2-admin">
+		<img src="https://www.travis-ci.org/d2-projects/d2-admin.svg?branch=master"/>
+	</a>
+	<a href="https://app.netlify.com/sites/d2-admin/deploys">
+		<img src="https://api.netlify.com/api/v1/badges/a5dd4bbd-da3f-4145-98a9-8012577bdcf5/deploy-status"/>
+	</a>
+</p>
 
-**完整版**
+D2Admin is a fully open source and free enterprise back-end product front-end integration solution, using the latest front-end technology stack, has prepared most of the project preparations, and with a lot of sample code to help the management system agile development.
 
-[Github 仓库](https://github.com/d2-projects/d2-admin) | 
-[码云仓库](https://gitee.com/fairyever/d2-admin) | 
-[预览地址](https://fairyever.gitee.io/d2-admin-preview)
+[中文介绍](https://github.com/d2-projects/d2-admin/blob/master/README.zh.md) | **English**
 
-**简化版模板**
+## Document
 
-[Github 仓库](https://github.com/d2-projects/d2-admin-start-kit) | 
-[码云仓库](https://gitee.com/fairyever/d2-admin-start-kit) | 
-[预览地址](https://fairyever.gitee.io/d2-admin-start-kit-preview/#/index)
+[Document](https://doc.d2admin.fairyever.com)
 
-因为现在集成了很多的插件和组件，首次加载会占用很多的时间，虽然已经做了首屏加载动画，但还是建议您在发布之前一定要删除没有用到的代码，比如项目没有用到图表、示例、插件组件
+## Preview
 
-<img src="https://raw.githubusercontent.com/FairyEver/d2-admin/master/github/preview@2x.png"/>
+* [Preview](https://d2-admin.netlify.com) Deployed in Netlify CDN
+* [Preview For Chinese](https://d2admin.fairyever.com) Deployed in qiniu CDN
 
-## 功能
+## Features
 
-* 首屏加载等待动画 避免首次加载白屏尴尬
-* 简约主题
-* 每个插件和组件都配有介绍文档
-* 图片资源 sketch 源文件（ 可以在这个文件内重新生成所有图片资源 ）
-* 登陆和注销
-* 根据路由自动生成菜单
-* 可折叠侧边栏
-* 方便的菜单设置
-* 多国语言支持
-* 富文本编辑器
-* Markdown 编辑器
-* 全屏功能
-* Fontawesome 图标库
-* 图标选择器（组件）
-* 自动引入下载的 SVG 图标
-* 前端假数据支持（ mock ）
-* 集成蚂蚁金服出品的 G2 图表
-* 图表自适应可拖拽大小的卡片容器（示例）
-* 简化剪贴板操作
-* 简化Cookie操作
-* 时间日期计算工具
-* 导入 Excel （ xlsx 格式 + csv 格式 ）
-* 数据导出 Excel （ xlsx 格式 + csv 格式 ）
-* 数据导出文本
-* 数字动画
-* 可拖拽调整大小的切分布局
-* 可拖拽调整大小和位置的网格布局
-* 提供三种方便的页面容器组件（正常卡片，隐形容器，填满页面）
-* 代码高亮显示
-* 加载并解析（或者直接指定资源） markdown 文件
-* GitHub 样式的 markdown 显示组件
-* markdown 内代码高亮
-* 为 markdown 扩展了百度云链接解析和优化显示
-* 右键菜单组件
-* 自定义滚动条和滚动控制
-* 内置5种主题
-* 公用样式抽离，方便的主题定制
-* 支持百万级数据量的表格组件
-* 打包后随意目录部署（已经做好兼容设置）
-* 支持临时菜单配置
-* 提供“试验台”功能 方便展示系统功能调用方法 `1.1.4 +`
-* 多标签页模式 `1.1.4 +`
-* 美化滚动条 `1.1.4 +`
-* 持久化存储 `1.1.4 +`
+* Build with vue-cli3
+* First screen loading waiting animation
+* Five themes
+* Built-in UEditor rich text editor
+* Detailed documentation
+* Login and logout
+* Separate routing and menu settings
+* Foldable sidebar
+* Multi-national language
+* Rich text editor
+* Markdown editor
+* full screen
+* Fontawesome icon library
+* Icon selector
+* Automatically register SVG icon
+* Simulation data
+* Clipboard package
+* Chart library
+* Time and date calculation tool
+* Import Excel ( xlsx + csv )
+* Data export Excel ( xlsx + csv )
+* Data export text
+* Digital animation
+* Drag and drop the size of the block layout
+* Grid layout for drag and resize and position
+* Out-of-the-box page layout components
+* Load and parse markdown files
+* GitHub style markdown display component
+* markdown internal code highlighting
+* Expanded Baidu cloud link resolution and optimized display for markdown
+* Right click menu component
+* Custom scrollbars and scrolling controls
+* Common style extraction, convenient theme customization
+* Support temporary menu configuration
+* System function display module `1.1.4 +`
+* Multi-tab mode `1.1.4 +`
+* Beautify the scroll bar `1.1.4 +`
+* json view `1.1.4 +`
+* cookie wrapper `1.1.5 +`
+* Multi-tab global control API `1.1.5 +`
+* Menu Global Control API `1.1.5 +`
+* Multi-tab page close control support right-click menu `1.1.10 +`
+* Modular global state management `1.2.0 +`
+* Multiple data persistence methods: distinguish users, distinguish routes, page data snapshot function `1.2.0 +`
+* Support for menu system that jumps out of external links `1.2.0 +`
+* Support menu svg icon `1.3.0 +`
+* Logging and error catching `1.3.0 +`
+* Global menu search `1.3.0 +`
+* Custom login redirect `1.3.0 +`
+* Switch global base component size `1.4.0 +`
+* Page loading progress bar `1.4.1 +`
+* Adaptive top menu bar `1.4.7 +`
+* Support for merging cells when exporting xslx `1.5.4 +`
 
-## 加入小组
+## Other version
 
-D2Admin 是完全开源免费的管理系统集成方案，由 [FairyEver](https://github.com/FairyEver) 在工作之余完全由兴趣驱动完成，如果你也一样喜欢前端开发，欢迎加入我们的讨论/学习群，群内可以`提问答疑`，`分享学习资料`或者随便扯淡
+| Name | HomePage  | Preview | Introduction |
+| --- | --- | --- | --- |
+| Starter template | [Github](https://github.com/d2-projects/d2-admin-start-kit) | [Preview](https://start-kit.d2admin.fairyever.com) |  |
+| D2 Admin Renren | Private project | [Preview](https://renren.d2admin.fairyever.com) | [renren](https://www.renren.io) |
+| Alibaba Ice scaffold | [Ice](https://alibaba.github.io/ice/scaffold?type=vue) | [Preview](https://ice.d2admin.fairyever.com) | [Introduction](https://juejin.im/post/5b6349716fb9a04f834669d6) |
 
-<img src="https://raw.githubusercontent.com/FairyEver/d2-admin/master/github/join@2x.png"/>
+## Ecology
 
-## 获取代码
+| Name | HomePage  | Preview | Introduction |
+| --- | --- | --- | --- |
+| D2 Daily | [Github](https://github.com/d2-projects/d2-awesome) | [Site](https://awesome.fairyever.com/daily/) | Update news and resources in the design and technology circles every day |
+| D2 CRUD | [Github](https://github.com/d2-projects/d2-crud) | [Preview](https://d2admin.fairyever.com/#/demo/d2-crud/index) | Table common operation package |
+| D2 Ribbons | [Github](https://github.com/d2-projects/d2-ribbons) | [Preview](https://github.com/d2-projects/d2-ribbons) | Open source project logo library |
 
-有两种方式可以获得 D2Admin 的代码
+## Derived open source projects
 
-* 在 [releases](https://github.com/d2-projects/d2-admin/releases) 页面下载最新的发行版。发行版一般是完成了某个大升级或者修复重要 bug 后发布的压缩包，你可以下载下来直接使用
+> These projects are contributed by the open source community and are not guaranteed to use the latest version of D2Admin. Please contact their open source authors for related usage questions.
 
-* Fork 仓库到你的 github 然后克隆到本地，然后使用 master 分支继续你的开发。这种方式得到的是最新的代码，但是会有未完成的新功能。**不建议使用这种方式**
+| Name | Github / HomePage | Preview | Introduction |
+| --- | --- | --- | --- |
+| d2-admin-pm | [Github](https://github.com/wjkang/d2-admin-pm) | [Preview](http://jaycewu.coding.me/d2-admin-pm) | RBAC privilege management solution based on d2-admin |
+| LanBlog | [Github](https://github.com/sinksmell/LanBlog) | [Preview](http://47.101.222.133/) | Vue + Beego restful api personal blog system |
 
-* 由于 github 访问较慢，推荐前往码云仓库下载 [gitee.com/fairyever/d2-admin](https://gitee.com/fairyever/d2-admin)，码云上的仓库**在每次发布版本才会更新**，所以如果你选择此方法，请直接 fork 仓库并克隆到本地
+## Open source backend implementation
 
-> 码云的仓库由 github 同步，但是发行版和标签同步有一些问题，所以推荐直接 fork 仓库
+> The backend is contributed by the open source community. The latest version of D2Admin is not guaranteed. Please contact its open source author for related usage issues.
 
-## 觉得不错 赏个咖啡 让作者打起精神 ~
+| Name | technology | HomePage | Preview | Introduction |
+| --- | --- | --- | --- | --- |
+| **CareyShop** | ThinkPHP5 | [Github](https://github.com/dnyz520/careyshop-admin) | [Preview](https://demo.careyshop.cn/admin/#/index) | High Performance Mall Framework System for CareyShop |
+| **jiiiiiin-security** | Spring Boot + Spring Security | [Github](https://github.com/Jiiiiiin/jiiiiiin-security) | [Preview](https://github.com/Jiiiiiin/jiiiiiin-security) | Separate front-end and back-end content management infrastructure projects, focusing on user rights management functions |
+| **Taroco** | Spring Cloud | [Github](https://github.com/liuht777/Taroco) | [Preview](http://111.231.192.110/) | Complete microservice enterprise solution |
+| **Aooms** | Spring Cloud | [Gitee](https://gitee.com/cyb-javaer/Aooms) | [Preview](https://www.yuboon.com/Aooms) | Extremely fast microservice development, not just as simple as JFinal |
+| **GOA** | Beego | [Github](https://github.com/Qsnh/goa) | [Preview](http://goaio.vip/) | Online question answering system based on Beego + Vue |
 
-<img src="https://raw.githubusercontent.com/FairyEver/d2-admin/master/github/reward-me@2x.png"/>
-<img src="https://raw.githubusercontent.com/FairyEver/d2-admin/master/github/qr@2x.png"/>
+## Badge
 
-更多介绍和使用方法见 [文档](http://d2admin.fairyever.com/zh/)
+If your open source project is based on D2Admin development, please add the following badge to your README:
 
-## 朋友的开源项目
+<a href="https://github.com/d2-projects/d2-admin" target="_blank">
+	<img src="https://raw.githubusercontent.com/FairyEver/d2-admin/master/doc/image/d2-admin@2x.png" width="200">
+</a>
 
-* [avue](https://github.com/nmxiaowei/avue)
+Copy the following code into the README to:
 
-<img src="https://raw.githubusercontent.com/FairyEver/d2-admin/master/github/give-a-star@2x.png"/>
+``` html
+<a href="https://github.com/d2-projects/d2-admin" target="_blank"><img src="https://raw.githubusercontent.com/FairyEver/d2-admin/master/doc/image/d2-admin@2x.png" width="200"></a>
+```
+
+At the same time, you can report your project to us. We will place the excellent project in D2Admin and help you publicize it.
+
+## Important Contributor
+
+* [@FairyEver](https://github.com/FairyEver)
+* [@sunhaoxiang](https://github.com/sunhaoxiang)
+* [@Aysnine](https://github.com/Aysnine)
+* [@han-feng](https://github.com/han-feng)
+* [@rongxingsun](https://github.com/rongxingsun)
+* [@dnyz520](https://github.com/dnyz520)
+
+## License
+
+[MIT](https://github.com/d2-projects/d2-admin/blob/master/LICENSE)
+
+Copyright (c) 2018-present FairyEver
